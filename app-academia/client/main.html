@@ -1,0 +1,30 @@
+<head>
+  <title>app-academia</title>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+    <h1>Welcome to Meteor!</h1>
+
+    <input type="button" id="tela1" value="Tela 1"/>
+    <input type="button" id="tela2" value="Tela 2"/>
+
+    <section>
+        {{>Template.dynamic template=content}}
+    </section>
+</template>
+
+<template name="tela1">
+    <h1>TELA 1</h1>
+</template>
+
+<template name="tela2">
+    <h1>TELA 2</h1>
+</template>
+
+<template name="padrao">
+    <h1>PADRAO</h1>
+</template>
