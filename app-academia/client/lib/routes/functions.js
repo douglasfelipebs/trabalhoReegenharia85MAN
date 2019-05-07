@@ -5,10 +5,10 @@ FlowRouter.route("/", {
   }
 });
 
-FlowRouter.route('/tela1', {
-  name: 'tela1',
+FlowRouter.route('/alunos', {
+  name: 'alunos',
   action: function(params, queryParams) {
-    BlazeLayout.render('tela1');
+    BlazeLayout.render('alunos');
   }
 });
 

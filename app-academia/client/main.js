@@ -5,8 +5,8 @@ import './main.html';
 
 
 Template.main.events({
-  'click #tela1'(event, instance) {
-    FlowRouter.go('tela1');
+  'click #cad_aluno'(event, instance) {
+    FlowRouter.go('alunos');
   },
   'click #tela2'(event, instance) {
     FlowRouter.go('tela2');
