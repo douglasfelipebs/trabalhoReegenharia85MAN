@@ -8,13 +8,22 @@
 
 <template name="main">
     <h1>Welcome to Meteor!</h1>
+    <div class="row">
+      <div class="col-sm-6">
+        <input type="button" id="cad_aluno" value="Cadastro de Alunos"/>
+      </div>
+      <div class="col-sm-6">
+        <input type="button" id="tela2" value="Tela 2"/>
+      </div>
+    </div>
 
-    <input type="button" id="cad_aluno" value="Cadastro de Alunos"/>
-    <input type="button" id="tela2" value="Tela 2"/>
-
-    <section>
-        {{>Template.dynamic template=content}}
-    </section>
+    <div class="row">
+      <div class="col-lg-12" style="margin-top: 5px">
+        <section>
+            {{>Template.dynamic template=content}}
+        </section>
+      </div>
+    </div>
 </template>
 
 <template name="tela2">
