@@ -86,6 +86,16 @@ let ssAlunos = {
     type: String,
     optional: false,
     label: 'Possui Plano de Saúde',
+    allowedValues: ['S', 'N'],
+    autoform: {
+      firstOption: '',
+      options: function() {
+        return {
+          'S': 'Sim',
+          'N': 'Não',
+        };
+      },
+    },
   },
   'questionario.planoSaude': {
     type: String,
@@ -96,6 +106,16 @@ let ssAlunos = {
     type: String,
     optional: false,
     label: 'Pratica outro esporte',
+    allowedValues: ['S', 'N'],
+    autoform: {
+      firstOption: '',
+      options: function() {
+        return {
+          'S': 'Sim',
+          'N': 'Não',
+        };
+      },
+    },
   },
   'questionario.esportePraticado': {
     type: String,
