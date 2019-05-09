@@ -19,11 +19,14 @@ shell-server@0.4.0            # Server-side component of the `meteor shell` comm
 
 kadira:flow-router
 kadira:blaze-layout
-aldeed:simple-schema
-aldeed:collection2@3.0.0
-aldeed:autoform
-aldeed:autoform-bs-datepicker
-aldeed:tabular
+aldeed:autoform@5.8.1
+aldeed:autoform-bs-datepicker@1.2.0
+aldeed:collection2@2.10.0
+aldeed:collection2-core@1.2.0
+aldeed:schema-deny@1.1.0
+aldeed:schema-index@1.1.1
+aldeed:simple-schema@1.5.3
+aldeed:tabular@2.1.1
 
 twbs:bootstrap
 
