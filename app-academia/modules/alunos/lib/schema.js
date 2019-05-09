@@ -12,7 +12,7 @@ let ssAlunos = {
     label: 'Nome',
   },
   dtNasc: {
-    type: String,
+    type: Date,
     optional: false,
     label: 'Data de Nascimento',
   },
