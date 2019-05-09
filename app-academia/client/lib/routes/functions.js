@@ -1,7 +1,7 @@
 FlowRouter.route("/", {
   name: 'index',
   action: function(params, queryParams) {
-    BlazeLayout.render('padrao');
+    BlazeLayout.render('home');
   }
 });
 
@@ -12,9 +12,9 @@ FlowRouter.route('/alunos', {
   }
 });
 
-FlowRouter.route('/tela2', {
-  name: 'tela2',
+FlowRouter.route('/home', {
+  name: 'home',
   action: function(params, queryParams) {
-    BlazeLayout.render('tela2');
+    BlazeLayout.render('home');
   }
 });

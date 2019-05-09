@@ -2,8 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d53aa9ec-8754-40e6-bc7d-bac51eb13ecd" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.meteor/packages" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/packages" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/modules/alunos/client/view/form_alunos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/alunos/client/view/insert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/alunos/server/methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/_stream_duplex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/_stream_passthrough.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/_stream_readable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/_stream_transform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/_stream_writable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/assert.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/buffer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/child_process.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/cluster.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/console.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/constants.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/crypto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/dgram.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/dns.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/domain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/fs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/http.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/https.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/module.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/net.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/os.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/path.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/process.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/punycode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/querystring.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/readline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/repl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/stream.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/string_decoder.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/sys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/timers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/tls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/tty.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/url.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/vm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/deps/zlib.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/map.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/scripts/build-deps.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/wrappers/crypto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/meteor-node-stubs/wrappers/module.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.meteor/versions" beforeDir="false" afterPath="$PROJECT_DIR$/.meteor/versions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/routes/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/lib/routes/functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/alunos/client/view/insert.html" beforeDir="false" afterPath="$PROJECT_DIR$/modules/alunos/client/view/insert.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/alunos/lib/schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/modules/alunos/lib/schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+>>>>>>> 03383bbd589ba834e5f9cece243bdbf20d611284
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,6 +96,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/main.css">
@@ -130,6 +192,45 @@
         </entry>
       </file>
     </leaf>
+=======
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/modules/alunos/client/view/insert.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/modules/alunos/client/view/form_alunos.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/modules/alunos/lib/schema.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+>>>>>>> 03383bbd589ba834e5f9cece243bdbf20d611284
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -177,15 +278,26 @@
         <option value="$PROJECT_DIR$/modules/alunos/client/view.html" />
         <option value="$PROJECT_DIR$/modules/alunos/client/alunos.html" />
         <option value="$PROJECT_DIR$/modules/alunos/alunos.html" />
-        <option value="$PROJECT_DIR$/client/lib/routes/functions.js" />
-        <option value="$PROJECT_DIR$/client/main.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/modules/alunos/lib/collection.js" />
         <option value="$PROJECT_DIR$/modules/alunos/client/view/alunos.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/client/main.html" />
         <option value="$PROJECT_DIR$/modules/alunos/lib/schema.js" />
         <option value="$PROJECT_DIR$/modules/alunos/client/view/insert.html" />
         <option value="$PROJECT_DIR$/.meteor/packages" />
+=======
+        <option value="$PROJECT_DIR$/.meteor/packages" />
+        <option value="$PROJECT_DIR$/modules/alunos/server/methods.js" />
+        <option value="$PROJECT_DIR$/modules/alunos/client/view/insert.js" />
+        <option value="$PROJECT_DIR$/client/lib/routes/functions.js" />
+        <option value="$PROJECT_DIR$/client/main.css" />
+        <option value="$PROJECT_DIR$/client/main.html" />
+        <option value="$PROJECT_DIR$/client/main.js" />
+        <option value="$PROJECT_DIR$/modules/alunos/client/view/insert.html" />
+        <option value="$PROJECT_DIR$/modules/alunos/lib/schema.js" />
+        <option value="$PROJECT_DIR$/modules/alunos/client/view/form_alunos.html" />
+>>>>>>> 03383bbd589ba834e5f9cece243bdbf20d611284
       </list>
     </option>
   </component>
@@ -228,11 +340,6 @@
               <item name="app-academia" type="b2602c69:ProjectViewProjectNode" />
               <item name="app-academia" type="462c0819:PsiDirectoryNode" />
               <item name=".meteor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app-academia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-academia" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app-academia" type="b2602c69:ProjectViewProjectNode" />
@@ -325,10 +432,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="12590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="2560" height="1053" extended-state="6" />
+=======
+    <option name="totallyTimeSpent" value="15476000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-1" width="1366" height="744" extended-state="6" />
+>>>>>>> 03383bbd589ba834e5f9cece243bdbf20d611284
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20536067" />
@@ -380,18 +494,12 @@
     <entry file="file://$PROJECT_DIR$/client/lib/s" />
     <entry file="file://$PROJECT_DIR$/client/lib/2" />
     <entry file="file://$PROJECT_DIR$/_lib/routing.js" />
-    <entry file="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/_init.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/2" />
     <entry file="file://$PROJECT_DIR$/modules/alunos/client/view.html" />
     <entry file="file://$PROJECT_DIR$/modules/alunos/client/alunos.html" />
     <entry file="file://$PROJECT_DIR$/modules/alunos/alunos.html" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
@@ -399,12 +507,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/main.css">
+=======
+>>>>>>> 03383bbd589ba834e5f9cece243bdbf20d611284
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state>
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/client/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
@@ -430,19 +541,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+=======
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -457,17 +556,156 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.meteor/packages">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//home/douglas/projetos/UDESC/85MAN/trabalho1/trabalhoReegenharia85MAN/app-academia/modules/alunos/client/view/insert.js">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/modules/alunos/client/view/insert.js</OriginalElement>
+          <nodes />
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="532.5" y="284.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+>>>>>>> 03383bbd589ba834e5f9cece243bdbf20d611284
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JavaScript-modules-diagram//home/douglas/projetos/UDESC/85MAN/trabalho1/trabalhoReegenharia85MAN/app-academia/client/main.js">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JavaScript-modules-diagram</ID>
+          <OriginalElement>$PROJECT_DIR$/client/main.js</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/client/main.html</node>
+            <node x="" y="">$PROJECT_DIR$/client/main.js#ReactiveVar#55;/home/douglas/projetos/UDESC/85MAN/trabalho1/trabalhoReegenharia85MAN/app-academia/client/main.js#Template#9;/home/douglas/projetos/UDESC/85MAN/trabalho1/trabalhoReegenharia85MAN/app-academia/client/main.js#main.html#98;</node>
+            <node x="" y="">$APPLICATION_HOME_DIR$/plugins/Meteor/lib/Meteor.jar!/tsMeteorStubs/meteor-v1.3.1.d.ts#ReactiveVar#98153;/home/douglas/.local/share/JetBrains/Toolbox/apps/WebStorm/ch-0/183.5153.33/plugins/Meteor/lib/Meteor.jar!/tsMeteorStubs/meteor-v1.3.1.d.ts#Template#97968;</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="113.0" y="207.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>All</Category>
+          </Categories>
+          <VISIBILITY>Details</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/alunos/server/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="60">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/alunos/client/view/insert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+>>>>>>> 03383bbd589ba834e5f9cece243bdbf20d611284
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/modules/alunos/lib/collection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/modules/alunos/lib/schema.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+=======
+    <entry file="file://$USER_HOME$/.meteor/packages/kadira_flow-router/2.12.1/web.browser/client/_init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/routes/functions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+>>>>>>> 03383bbd589ba834e5f9cece243bdbf20d611284
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.meteor/packages">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="300">
           <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+=======
+        <state relative-caret-position="315">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/alunos/client/view/insert.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/alunos/lib/schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/alunos/client/view/form_alunos.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+>>>>>>> 03383bbd589ba834e5f9cece243bdbf20d611284
         </state>
       </provider>
     </entry>
