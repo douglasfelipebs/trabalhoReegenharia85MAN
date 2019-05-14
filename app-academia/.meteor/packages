@@ -32,6 +32,7 @@ twbs:bootstrap
 
 # ui
 abpetkov:switchery
+bankfacil:vanilla-masker
 hinas:meteor-bootstrap-confirmation
 pahans:reactive-modal
 pcel:messenger
@@ -46,3 +47,5 @@ dburles:collection-helpers
 reywood:publish-composite
 harrison:papa-parse
 momentjs:moment
+
+meteorhacks:subs-manager@1.6.4

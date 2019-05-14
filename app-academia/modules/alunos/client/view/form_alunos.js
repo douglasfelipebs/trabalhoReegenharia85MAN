@@ -7,6 +7,12 @@ Template.form_alunos.onCreated(function () {
 
 });
 
+Template.form_alunos.onRendered(function () {
+  VMasker(this.find("[name='contato.telefone']")).maskPattern("(99) 9999-9999");
+  VMasker(this.find("[name='contato.celular']")).maskPattern("(99) 9 9999-9999");
+  VMasker(this.find("[name='endereco.cep']")).maskPattern("99999-999");
+});
+
 Template.form_alunos.helpers({
   possuiPS: () => Template.instance().possuiPS.get(),
   praticaEsporte: () => Template.instance().praticaEsporte.get(),

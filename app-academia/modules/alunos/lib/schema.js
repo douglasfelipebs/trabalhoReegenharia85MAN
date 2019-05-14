@@ -20,10 +20,30 @@ let ssAlunos = {
     type: String,
     optional: false,
     label: 'Sexo',
+    allowedValues: ['M', 'F'],
+    autoform: {
+      firstOption: false,
+      options: function () {
+        return {
+          'M': 'Masculino',
+          'F': 'Feminino',
+        };
+      },
+    },
   },
   ativo: {
-    type: Boolean,
+    type: String,
     label: 'Ativo',
+    optional: false,
+    autoform: {
+      firstOption: false,
+      options: function () {
+        return {
+          'S': 'Ativo',
+          'N': 'Inativo',
+        };
+      },
+    },
   },
   contato: {
     type: Object,
@@ -57,6 +77,42 @@ let ssAlunos = {
     type: String,
     optional: false,
     label: 'UF',
+    allowedValues: ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MG', 'MS', 'MT', 'PA', 'PB',
+      'PE', 'PI', 'PR', 'RJ', 'RO', 'RN', 'RR', 'RS', 'SC', 'SE', 'SP', 'TO'],
+    autoform: {
+      firstOption: '',
+      options: function () {
+        return {
+          'AC': 'AC',
+          'AL': 'AL',
+          'AP': 'AP',
+          'AM': 'AM',
+          'BA': 'BA',
+          'CE': 'CE',
+          'DF': 'DF',
+          'ES': 'ES',
+          'GO': 'GO',
+          'MA': 'MA',
+          'MG': 'MG',
+          'MS': 'MS',
+          'MT': 'MT',
+          'PA': 'PA',
+          'PB': 'PB',
+          'PE': 'PE',
+          'PI': 'PI',
+          'PR': 'PR',
+          'RJ': 'RJ',
+          'RO': 'RO',
+          'RN': 'RN',
+          'RR': 'RR',
+          'RS': 'RS',
+          'SC': 'SC',
+          'SE': 'SE',
+          'SP': 'SP',
+          'TO': 'TO',
+        };
+      }
+    },
   },
   'endereco.cep': {
     type: String,
@@ -72,6 +128,9 @@ let ssAlunos = {
     type: String,
     optional: false,
     label: 'Número',
+    autoform: {
+      type: 'number'
+    }
   },
   'endereco.bairro': {
     type: String,
@@ -85,11 +144,11 @@ let ssAlunos = {
   'questionario.possuiPlanoSaude': {
     type: String,
     optional: false,
-    label: 'Possui Plano de Saúde',
+    label: 'Possui plano de saúde',
     allowedValues: ['S', 'N'],
     autoform: {
       firstOption: '',
-      options: function() {
+      options: function () {
         return {
           'S': 'Sim',
           'N': 'Não',
@@ -109,7 +168,7 @@ let ssAlunos = {
     allowedValues: ['S', 'N'],
     autoform: {
       firstOption: '',
-      options: function() {
+      options: function () {
         return {
           'S': 'Sim',
           'N': 'Não',
@@ -123,9 +182,23 @@ let ssAlunos = {
     label: 'Esporte Praticado',
   },
   'questionario.porqueFazAcademia': {
-    type: String,
+    type: [String],
     optional: false,
     label: 'Porque faz academia',
+    autoform: {
+      type: 'select',
+      firstOption: '',
+      multiple: true,
+      options: function () {
+        return {
+          '1': 'Aprender a nadar',
+          '2': 'Bronquite',
+          '3': 'Coluna',
+          '4': 'Obesidade',
+          '5': 'Treinar',
+        };
+      },
+    },
   },
   'questionario.indicacao': {
     type: Object,

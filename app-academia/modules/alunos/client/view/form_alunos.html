@@ -4,7 +4,7 @@
     <ul class="nav nav-tabs">
       <li class="active">
         <a href="#alunotab1" data-toggle="tab" aria-expanded="true">
-          Geral
+          Dados Pessoais
         </a>
       </li>
       <li class="">
@@ -17,58 +17,61 @@
 
       <div class="tab-pane active" id="alunotab1">
         <div class="row">
-          <div class="col-sm-2">
-            {{> afQuickField name='codigo'}}
-          </div>
-          <div class="col-sm-10">
-            {{> afQuickField name='nome' }}
+          <div class="col-sm-9">
+            <div class="row">
+              <div class="col-sm-3">
+                {{> afQuickField name='codigo'}}
+              </div>
+              <div class="col-sm-9">
+                {{> afQuickField name='nome' }}
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-3">
+                {{> afQuickField name='dtNasc'}}
+              </div>
+              <div class="col-sm-3">
+                {{> afQuickField name='sexo'}}
+              </div>
+              <div class="col-sm-3">
+                {{> afQuickField name='ativo'}}
+              </div>
+              <div class="col-sm-3">
+                {{> afQuickField name='contato.telefone'}}
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4">
+                {{> afQuickField name='contato.celular'}}
+              </div>
+              <div class="col-sm-8">
+                {{> afQuickField name='contato.email'}}
+              </div>
+            </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-sm-6">
-            {{> afQuickField name='dtNasc'}}
-          </div>
-          <div class="col-sm-6">
-            {{> afQuickField name='sexo'}}
-          </div>
-        </div>
-
-        <i class="fa fa-angle-double-right" style="margin-bottom: 15px;"></i> Contato
-        <div class="row">
-          <div class="col-sm-4">
-            {{> afQuickField name='contato.telefone'}}
-          </div>
-          <div class="col-sm-4">
-            {{> afQuickField name='contato.celular'}}
-          </div>
-          <div class="col-sm-4">
-            {{> afQuickField name='contato.email'}}
-          </div>
-        </div>
-
-        <i class="fa fa-angle-double-right" style="margin-bottom: 15px;"></i> Endereco
-        <div class="row">
-          <div class="col-sm-7">
+          <div class="col-sm-9">
             {{> afQuickField name='endereco.cidade'}}
           </div>
-          <div class="col-sm-2">
+          <div class="col-sm-1">
             {{> afQuickField name='endereco.uf'}}
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-2">
             {{> afQuickField name='endereco.cep'}}
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-9">
+          <div class="col-sm-7">
             {{> afQuickField name='endereco.rua'}}
           </div>
-          <div class="col-sm-3">
+          <div class="col-sm-2">
             {{> afQuickField name='endereco.numero'}}
           </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-3">
             {{> afQuickField name='endereco.bairro'}}
           </div>
         </div>
@@ -95,6 +98,11 @@
               {{> afQuickField name='questionario.esportePraticado'}}
             </div>
           {{/if}}
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            {{> afQuickField name='questionario.porqueFazAcademia'}}
+          </div>
         </div>
       </div>
     </div>
