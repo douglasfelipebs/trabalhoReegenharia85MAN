@@ -9,14 +9,21 @@
 <template name="main">
   <div class="content">
     {{> menus}}
-    <div class="app">
-      <section>
-          {{>Template.dynamic template=content}}
-      </section>
-    </div>
+    {{> layout}}
   </div>
 </template>
 
 <template name="home">
     <h1>HOME</h1>
+</template>
+
+<template name="layout">
+  <div class="app">
+    <section>
+      {{>Template.dynamic template=actions}}
+    </section>
+    <section>
+      {{>Template.dynamic template=content}}
+    </section>
+  </div>
 </template>

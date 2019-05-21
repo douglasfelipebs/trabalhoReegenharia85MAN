@@ -104,6 +104,27 @@
             {{> afQuickField name='questionario.porqueFazAcademia'}}
           </div>
         </div>
+        {{#if fazPorOutroMotivo}}
+          <div class="row">
+            <div class="col-sm-12">
+              {{> afQuickField name='questionario.porqueOutro'}}
+            </div>
+          </div>
+        {{/if}}
+
+        <!--INDICAÇÃO-->
+        <div class="row">
+          <div class="col-sm-12">
+            {{> afQuickField name='questionario.indicacao.comoSoube'}}
+          </div>
+        </div>
+        {{#if soubePorAluno}}
+          <div class="row">
+            <div class="col-sm-12">
+              {{> afQuickField name='questionario.indicacao.alunoIndicante'}}
+            </div>
+          </div>
+        {{/if}}
       </div>
     </div>
   </div>

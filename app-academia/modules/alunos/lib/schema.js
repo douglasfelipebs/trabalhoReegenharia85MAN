@@ -196,17 +196,46 @@ let ssAlunos = {
           '3': 'Coluna',
           '4': 'Obesidade',
           '5': 'Treinar',
+          '6': 'Manter a forma',
+          '7': 'Gestante',
+          '8': 'Conselho Médico',
+          '9': 'Outros',
         };
       },
     },
+  },
+  'questionario.porqueOutro': {
+    type: String,
+    optional: true,
+    label: "Qual?",
   },
   'questionario.indicacao': {
     type: Object,
     optional: false,
   },
   'questionario.indicacao.comoSoube': {
-    type: String,
+    type: [String],
     optional: false,
+    label: "Como soube da academia",
+    autoform: {
+      type: 'select',
+      firstOption: '',
+      multiple: true,
+      options: function () {
+        return {
+          '1': 'Jornal',
+          '2': 'Placa',
+          '3': 'Cartaz',
+          '4': 'Panfleto',
+          '5': 'Amigos',
+          '6': 'Outdoor',
+          '7': 'Internet',
+          '8': 'Passando em Frente',
+          '9': 'Outros',
+          '10': 'Aluno da Academia',
+        };
+      },
+    },
   },
   'questionario.indicacao.alunoIndicante': {
     type: String,

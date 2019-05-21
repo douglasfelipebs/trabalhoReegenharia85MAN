@@ -1,5 +1,9 @@
 Meteor.methods({
   insere_aluno: function (doc) {
-    Alunos.insert(doc);
+    return !!Alunos.insert(doc);
+  },
+  update_aluno: function (update_doc) {
+    console.log(update_doc);
+    return !!Alunos.update({_id: update_doc._id, update: update_doc.update});
   }
 })

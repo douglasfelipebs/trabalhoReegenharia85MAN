@@ -1,3 +1,18 @@
 <template name="alunos">
-    {{> alunos_insert}}
+
+  {{#if add}}
+    <div class="row">
+      <div class="col-sm-12">
+        {{> alunos_insert}}
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if edit}}
+    {{> alunos_update}}
+  {{/if}}
+
+  {{#if list}}
+    {{> alunos_list}}
+  {{/if}}
 </template>

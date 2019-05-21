@@ -4,7 +4,8 @@ Template.form_alunos.onCreated(function () {
 
   instance.possuiPS = new ReactiveVar(false);
   instance.praticaEsporte = new ReactiveVar(false);
-
+  instance.fazPorOutroMotivo = new ReactiveVar(false);
+  instance.soubePorAluno = new ReactiveVar(false);
 });
 
 Template.form_alunos.onRendered(function () {
@@ -16,6 +17,8 @@ Template.form_alunos.onRendered(function () {
 Template.form_alunos.helpers({
   possuiPS: () => Template.instance().possuiPS.get(),
   praticaEsporte: () => Template.instance().praticaEsporte.get(),
+  fazPorOutroMotivo: () => (parseInt(Template.instance().fazPorOutroMotivo.get()) === 9),
+  soubePorAluno: () => (parseInt(Template.instance().soubePorAluno.get()) === 10),
 });
 
 Template.form_alunos.events({
@@ -34,5 +37,11 @@ Template.form_alunos.events({
     } else {
       instance.praticaEsporte.set(false);
     }
+  },
+  'change [name$=porqueFazAcademia]': function (event, instance) {
+    instance.fazPorOutroMotivo.set(event.target.value);
+  },
+  'change [name$=comoSoube]': function (event, instance) {
+    instance.soubePorAluno.set(event.target.value);
   },
 });
