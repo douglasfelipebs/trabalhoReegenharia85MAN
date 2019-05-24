@@ -9,10 +9,18 @@
   {{/if}}
 
   {{#if edit}}
-    {{> alunos_update}}
+    <div class="row">
+      <div class="col-sm-12">
+        {{> alunos_update}}
+      </div>
+    </div>
   {{/if}}
 
   {{#if list}}
-    {{> alunos_list}}
+    <div class="row">
+      <div class="col-sm-12">
+        {{> alunos_list}}
+      </div>
+    </div>
   {{/if}}
 </template>

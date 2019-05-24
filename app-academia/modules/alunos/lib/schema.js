@@ -185,24 +185,6 @@ let ssAlunos = {
     type: [String],
     optional: false,
     label: 'Porque faz academia',
-    autoform: {
-      type: 'select',
-      firstOption: '',
-      multiple: true,
-      options: function () {
-        return {
-          '1': 'Aprender a nadar',
-          '2': 'Bronquite',
-          '3': 'Coluna',
-          '4': 'Obesidade',
-          '5': 'Treinar',
-          '6': 'Manter a forma',
-          '7': 'Gestante',
-          '8': 'Conselho Médico',
-          '9': 'Outros',
-        };
-      },
-    },
   },
   'questionario.porqueOutro': {
     type: String,
@@ -217,25 +199,6 @@ let ssAlunos = {
     type: [String],
     optional: false,
     label: "Como soube da academia",
-    autoform: {
-      type: 'select',
-      firstOption: '',
-      multiple: true,
-      options: function () {
-        return {
-          '1': 'Jornal',
-          '2': 'Placa',
-          '3': 'Cartaz',
-          '4': 'Panfleto',
-          '5': 'Amigos',
-          '6': 'Outdoor',
-          '7': 'Internet',
-          '8': 'Passando em Frente',
-          '9': 'Outros',
-          '10': 'Aluno da Academia',
-        };
-      },
-    },
   },
   'questionario.indicacao.alunoIndicante': {
     type: String,

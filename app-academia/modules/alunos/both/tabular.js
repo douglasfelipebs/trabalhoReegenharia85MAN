@@ -4,22 +4,36 @@ import moment from 'moment';
 new Tabular.Table({
   name: "Alunos",
   collection: Alunos,
+  responsive: true,
   pub: 'tabular_alunos',
   columns: [
-    {data: "codigo", title: "Código"},
-    {data: "nome", title: "Nome"},
+    {
+      data: "codigo",
+      title: "Código",
+      width: '15%'
+    },
+    {
+      data: "nome",
+      title: "Nome",
+      width: '60%',
+      render: function (val, type, doc) {
+        return val.toUpperCase();
+      }
+    },
     {
       data: "dtNasc",
       title: "Data de Nascimento",
       render: function (val, type, doc) {
         if (val instanceof Date) {
-          return moment(val).calendar();
+          return moment(val).utc().format('DD/MM/YYYY');
         } else {
           return "Never";
         }
-      }
+      },
     },
     {
+      title: 'Editar',
+      width: '10px',
       tmpl: Meteor.isClient && Template.edit_button
     }
   ]

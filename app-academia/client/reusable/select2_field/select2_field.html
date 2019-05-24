@@ -1,0 +1,62 @@
+<template name="select2Field">
+
+    <!-- Main div: start. -->
+    <div class="form-group
+        {{#if isAfField}}{{#if afFieldIsInvalid name=select2FieldName}} has-error {{/if}}{{/if}}"
+         data-required="{{#if isAfField}}{{afFieldIsRequired name=select2FieldName}}{{/if}}">
+
+        <!-- Part: TOP. =========================================================================================-->
+
+        {{#unless equals label false}}
+            <!-- Label. -->
+            <label class="control-label" for="{{select2FieldName}}">
+                {{#if select2FieldLabel}}
+                    {{select2FieldLabel}}
+                {{else}}
+                    <!-- When field belongs to an autoform, this can display the schema label. -->
+                    {{#if isAfField}}
+                        {{afFieldLabelText name=select2FieldName}}
+                    {{/if}}
+                {{/if}}
+            </label>
+        {{/unless}}
+
+        <!-- Part: INPUT. =======================================================================================-->
+
+        {{#if isAfField}}
+            {{> afFieldInput name=select2FieldName tabindex=tabindex options=options disabled=disabled class="select2AutoForm"}}
+        {{else}}
+            {{#if multiple}}
+                <select class="form-control" name="{{select2FieldName}}" tabindex="{{tabindex}}" disabled="{{disabled}}"
+                        multiple="multiple">
+                    {{#if options}}
+                        {{#each options}}
+                            <option value="{{value}}">{{label}}</option>
+                        {{/each}}
+                    {{/if}}
+                </select>
+            {{else}}
+                <select class="form-control" name="{{select2FieldName}}" tabindex="{{tabindex}}"
+                        disabled="{{disabled}}">
+                    {{#if options}}
+                        {{#each options}}
+                            <option value="{{value}}">{{label}}</option>
+                        {{/each}}
+                    {{/if}}
+                </select>
+            {{/if}}
+        {{/if}}
+
+        <!-- Part: BOTTOM. ======================================================================================-->
+
+        <!-- When field belongs to an autoform, it's necessary for displaying error messages. -->
+        {{#if isAfField}}
+            {{#if afFieldIsInvalid name=select2FieldName}}
+                <span class="help-block">{{{afFieldMessage name=select2FieldName}}}</span>
+            {{/if}}
+        {{/if}}
+
+    </div>
+    <!-- Main div: end. -->
+
+</template>
