@@ -121,7 +121,10 @@
         {{#if soubePorAluno}}
           <div class="row">
             <div class="col-sm-12">
-              {{> afQuickField name='questionario.indicacao.alunoIndicante'}}
+              {{> searchField options=SearchFieldDefaultOptions.Aluno
+                name='questionario.indicacao.alunoIndicante'
+              }}
+              <!--{{> afQuickField name='questionario.indicacao.alunoIndicante'}}-->
             </div>
           </div>
         {{/if}}

@@ -1,0 +1,4 @@
+[data-required] label:after {
+  content: ' *';
+  color: #cb2027;
+}

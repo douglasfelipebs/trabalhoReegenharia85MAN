@@ -3,6 +3,7 @@ Meteor.methods({
     return !!Alunos.insert(doc);
   },
   update_aluno: function (update_doc) {
-    return !!Alunos.update({_id: update_doc._id, update: update_doc.update});
+    console.log(update_doc);
+    return !!Alunos.update({_id: update_doc._id}, update_doc.update);
   }
 });

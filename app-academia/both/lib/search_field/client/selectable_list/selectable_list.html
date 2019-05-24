@@ -1,0 +1,11 @@
+<template name="searchFieldSelectableList">
+    {{#if table}}
+        {{> tabular table=table
+                id=tableId
+                class="table table-striped table-bordered table-condensed table-responsive table-hover"
+                selector=selector
+        }}
+    {{else}}
+        <p style="text-align: center">Esta tabela não foi encontrada.</p>
+    {{/if}}
+</template>

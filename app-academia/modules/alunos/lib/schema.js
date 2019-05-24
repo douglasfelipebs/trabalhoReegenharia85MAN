@@ -143,7 +143,7 @@ let ssAlunos = {
   },
   'questionario.possuiPlanoSaude': {
     type: String,
-    optional: false,
+    optional: true,
     label: 'Possui plano de saúde',
     allowedValues: ['S', 'N'],
     autoform: {
@@ -163,7 +163,7 @@ let ssAlunos = {
   },
   'questionario.praticaEsporte': {
     type: String,
-    optional: false,
+    optional: true,
     label: 'Pratica outro esporte',
     allowedValues: ['S', 'N'],
     autoform: {
@@ -183,7 +183,7 @@ let ssAlunos = {
   },
   'questionario.porqueFazAcademia': {
     type: [String],
-    optional: false,
+    optional: true,
     label: 'Porque faz academia',
   },
   'questionario.porqueOutro': {
@@ -193,11 +193,11 @@ let ssAlunos = {
   },
   'questionario.indicacao': {
     type: Object,
-    optional: false,
+    optional: true,
   },
   'questionario.indicacao.comoSoube': {
     type: [String],
-    optional: false,
+    optional: true,
     label: "Como soube da academia",
   },
   'questionario.indicacao.alunoIndicante': {

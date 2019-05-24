@@ -1,0 +1,99 @@
+<template name="searchField">
+    {{#with options}}
+
+        <!-- Main div: start. -->
+        <div class="form-group
+                 {{#if field.isAfField}}{{#if afFieldIsInvalid name=searchFieldName}}has-error{{/if}}{{/if}}"
+             data-required="{{#if field.isAfField}}{{afFieldIsRequired name=searchFieldName}}{{/if}}">
+
+            <!-- Part: TOP. =========================================================================================-->
+
+            <!-- Label. -->
+            <label class="control-label" for="{{searchFieldName}}">
+                {{#if searchFieldLabel}}
+                    {{searchFieldLabel}}
+                {{else}}
+                    <!-- When search_field belongs to an autoform, this can display the schema label. -->
+                    {{#if field.isAfField}}
+                        {{afFieldLabelText name=searchFieldName}}
+                    {{/if}}
+                {{/if}}
+            </label>
+
+            <!-- Part: INPUT. =======================================================================================-->
+
+            <div class="input-group">
+                {{#if freeSearch}}
+                    <input name="{{searchFieldName}}_freeSearch"
+                           class="form-control {{#if ../disabled}}hidden{{/if}}"
+                           type="{{#with freeSearch}}{{#if type}}{{type}}{{else}}text{{/if}}{{/with}}"
+                           placeholder="{{freeSearch.placeholder}}"
+                           id="{{searchFieldName}}_freeSearch"
+                           tabindex="{{../tabindex}}"
+                           style="width: {{freeSearch.width}};">
+                {{/if}}
+
+                <input name="{{searchFieldName}}_textDisplay"
+                       class="form-control"
+                       type="text"
+                       placeholder="{{searchFieldPlaceholder}}"
+                       id="{{searchFieldName}}_textDisplay"
+                       value="{{searchFieldValue}}"
+                       readonly
+                       required
+                       style="{{#if ../disabled}}width: 100%{{else}}{{#if
+                               freeSearch}}width: calc(100% - {{freeSearch.width}});{{/if}}{{/if}}">
+
+                <input name="{{searchFieldName}}"
+                       class="form-control"
+                       type="hidden"
+                       placeholder="{{searchFieldName}}"
+                       id="value_input"
+                       value="{{../value}}"
+                       readonly
+                       data-schema-key="{{searchFieldName}}">
+
+
+                <span class="input-group-btn">
+                    {{#unless ../disabled}}
+                        <!-- if there's any selected entry, shows the below button that is used to clean the above text input -->
+                        <i class="fa fa-times clean-btn-modal" style="display: none"></i>
+                    {{/unless}}
+
+                    {{#if ../disabled}}
+                        <button class="btn btn-default disabled" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    {{else}}
+                        <!-- button used to open the modal -->
+                        <button class="btn btn-default" id="show_modal" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    {{/if}}
+                </span>
+
+                {{#unless ../disabled}}
+                    {{#if addBtn}}
+                        <span class="input-group-btn">
+							<button class="btn btn-default" id="add_btn" type="button">
+								<i class="fa fa-plus"></i>
+							</button>
+						</span>
+                    {{/if}}
+                {{/unless}}
+            </div>
+
+            <!-- Part: BOTTOM. ======================================================================================-->
+
+            <!-- When search_field belongs to an autoform, it's necessary for displaying error messages. -->
+            {{#if field.isAfField}}
+                {{#if afFieldIsInvalid name=searchFieldName}}
+                    <span class="help-block">{{{afFieldMessage name=searchFieldName}}}</span>
+                {{/if}}
+            {{/if}}
+
+        </div>
+        <!-- Main div: end. -->
+
+    {{/with}}
+</template>
