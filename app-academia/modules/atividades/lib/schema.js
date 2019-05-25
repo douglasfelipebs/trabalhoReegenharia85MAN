@@ -11,6 +11,10 @@ let ssAtividades = {
     optional: false,
     label: 'Nome',
   },
+  localAtividade: {
+    type: String,
+    label: 'Local da Atividade',
+  }
 };
 
 SchemaAtividades.ssForm = new SimpleSchema(ssAtividades);
