@@ -1,0 +1,26 @@
+<template name="equipamentos">
+
+  {{#if add}}
+    <div class="row">
+      <div class="col-sm-12">
+        {{> equipamentos_insert}}
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if edit}}
+    <div class="row">
+      <div class="col-sm-12">
+        {{> equipamentos_update}}
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if list}}
+    <div class="row">
+      <div class="col-sm-12">
+        {{> equipamentos_list}}
+      </div>
+    </div>
+  {{/if}}
+</template>

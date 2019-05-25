@@ -14,6 +14,7 @@ let ssAtividades = {
   localAtividade: {
     type: String,
     label: 'Local da Atividade',
+    optional: false
   }
 };
 
