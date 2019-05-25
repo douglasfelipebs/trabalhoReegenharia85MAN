@@ -1,0 +1,22 @@
+<template name="form_horarios">
+  <div class="row">
+    <div class="col-sm-12">
+      {{> afQuickField name='codigo'}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      {{> select2Field isAfField=true name='diaSemana' options=diasDaSemanaOptions}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      {{> afQuickField name='horaInicio' }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      {{> afQuickField name='horaFim' }}
+    </div>
+  </div>
+</template>
