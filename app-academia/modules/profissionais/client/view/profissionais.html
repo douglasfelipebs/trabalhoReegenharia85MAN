@@ -1,0 +1,26 @@
+<template name="profissionais">
+
+  {{#if add}}
+    <div class="row">
+      <div class="col-sm-12">
+        {{> profissionais_insert}}
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if edit}}
+    <div class="row">
+      <div class="col-sm-12">
+        {{> profissionais_update}}
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if list}}
+    <div class="row">
+      <div class="col-sm-12">
+        {{> profissionais_list}}
+      </div>
+    </div>
+  {{/if}}
+</template>

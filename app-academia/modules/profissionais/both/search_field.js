@@ -1,19 +1,19 @@
-SearchFieldDefaultOptions.Aluno = {
+SearchFieldDefaultOptions.Profissional = {
   field: {
-    label: "Aluno",
-    placeholder: "Selecione um Aluno",
-    name: "aluno_id",
+    label: "Profissional",
+    placeholder: "Selecione um Profissional",
+    name: "profissional_id",
     isAfField: true,
     valueStoringAttr: "data-id",
     valueAttrFormat: "[nome]",
     allowCleanBtn: true,
   },
   table: {
-    tableId: "stateSaveIdAlunoModal",
-    tableName: "Alunos",
+    tableId: "stateSaveIdProfissionalModal",
+    tableName: "Profissionais",
   },
   collection: {
-    name: "alunos"
+    name: "profissionais"
   },
   freeSearch: {
     placeholder: 'Código',
@@ -21,11 +21,11 @@ SearchFieldDefaultOptions.Aluno = {
     width: '90px'
   },
   updateSubscription: {
-    name: "single_aluno"
+    name: "single_profissional"
   },
   onSelected: function (id, options) {
     if (id) {
-      Meteor.subscribe("single_aluno", id);
+      Meteor.subscribe("single_profissional", id);
     }
   }
 };

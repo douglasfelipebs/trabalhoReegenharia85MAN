@@ -3,4 +3,4 @@
  */
 
 SearchFieldDefaultOptions = {};
-// Template.registerHelper('SearchFieldDefaultOptions', SearchFieldDefaultOptions);
+Meteor.isClient && Template.registerHelper('SearchFieldDefaultOptions', SearchFieldDefaultOptions);

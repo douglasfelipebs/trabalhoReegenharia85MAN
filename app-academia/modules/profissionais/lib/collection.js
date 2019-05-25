@@ -1,0 +1,1 @@
+Profissionais = new Mongo.Collection('profissionais');

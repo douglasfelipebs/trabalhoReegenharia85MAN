@@ -1,7 +1,7 @@
 import Tabular from 'meteor/aldeed:tabular';
 import moment from 'moment';
 
-new Tabular.Table({
+TabularTables.Alunos = new Tabular.Table({
   name: "Alunos",
   collection: Alunos,
   responsive: true,
