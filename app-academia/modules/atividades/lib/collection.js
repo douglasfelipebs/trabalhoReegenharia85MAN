@@ -1,0 +1,1 @@
+Atividades = new Mongo.Collection('atividades');

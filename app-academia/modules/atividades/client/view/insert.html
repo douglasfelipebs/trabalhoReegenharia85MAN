@@ -1,0 +1,21 @@
+<template name="atividades_insert">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        <b>Cadastro de Atividade</b>
+      </h3>
+    </div>
+    <div class="panel-body" style="display: block;">
+      {{#autoForm id="formCadastroAtividades"
+                  schema="SchemaAtividades.ssForm"
+      }}
+
+        {{> form_atividades }}
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Salvar</button>
+        </div>
+      {{/autoForm}}
+    </div>
+  </div>
+</template>

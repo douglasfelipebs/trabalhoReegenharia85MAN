@@ -1,0 +1,20 @@
+<template name="atividades">
+
+  <div class="row">
+    {{#unless edit}}
+        <div class="col-sm-6">
+          {{> atividades_insert}}
+        </div>
+    {{/unless}}
+
+    {{#if edit}}
+      <div class="col-sm-6">
+        {{> atividades_update}}
+      </div>
+    {{/if}}
+
+    <div class="col-sm-6">
+      {{> atividades_list}}
+    </div>
+  </div>
+</template>

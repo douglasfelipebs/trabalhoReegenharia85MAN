@@ -6,6 +6,7 @@ TabularTables.Profissionais = new Tabular.Table({
   collection: Profissionais,
   responsive: true,
   pub: 'tabular_profissionais',
+  order: [0, 'asc'],
   columns: [
     {
       data: "codigo",
@@ -42,6 +43,11 @@ TabularTables.Profissionais = new Tabular.Table({
       title: 'Editar',
       width: '10px',
       tmpl: Meteor.isClient && Template.edit_button
+    },
+    {
+      title: 'Remover',
+      width: '10px',
+      tmpl: Meteor.isClient && Template.remove_button
     }
   ]
 });

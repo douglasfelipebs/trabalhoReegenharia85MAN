@@ -38,9 +38,13 @@ AutoForm.hooks({
       };
       Meteor.call('update_profissional', update_method_doc, function (err, result) {
         if (!err && result) {
+          swal('Sucesso!', 'Profissional atualizado com sucesso!', 'success');
           FlowRouter.go('app', {
             menu_router_link: 'profissionais',
           })
+        } else {
+          swal('Erro!', 'Ocorreu um erro ao alterar este Profissional!', 'error');
+          $('[type="submit"]').removeAttr('disabled');
         }
       });
     }

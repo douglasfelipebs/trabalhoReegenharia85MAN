@@ -4,5 +4,8 @@ Meteor.methods({
   },
   update_profissional: function (update_doc) {
     return !!Profissionais.update({_id: update_doc._id}, update_doc.update);
+  },
+  remove_profissionais: function (_id) {
+    return !!Profissionais.remove({_id});
   }
 });
