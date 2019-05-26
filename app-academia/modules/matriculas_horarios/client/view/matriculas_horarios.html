@@ -1,0 +1,26 @@
+<template name="matriculas_horarios">
+
+  {{#if add}}
+    <div class="row">
+      <div class="col-sm-12">
+        {{> matriculas_horarios_insert}}
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if edit}}
+    <div class="row">
+      <div class="col-sm-12">
+        {{> matriculas_horarios_update}}
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if list}}
+    <div class="row">
+      <div class="col-sm-12">
+        {{> matriculas_horarios_list}}
+      </div>
+    </div>
+  {{/if}}
+</template>

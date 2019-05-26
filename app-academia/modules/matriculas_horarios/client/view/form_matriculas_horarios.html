@@ -1,0 +1,36 @@
+<template name="form_matriculas_horarios">
+  <div class="row">
+    <div class="col-sm-3">
+      {{> afQuickField name='codigo'}}
+    </div>
+    <div class="col-sm-9">
+      {{> searchField options=SearchFieldDefaultOptions.Aluno
+        name='aluno_id'
+      }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      {{> searchField options=SearchFieldDefaultOptions.Horario
+        name='horario_id'
+      }}
+    </div>
+    <div class="col-sm-6">
+      {{> searchField options=SearchFieldDefaultOptions.Profissional
+        name='profissional_id'
+      }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      {{> searchField options=SearchFieldDefaultOptions.Atividade
+        name='atividade_id'
+      }}
+    </div>
+    <div class="col-sm-6">
+      {{> searchField options=SearchFieldDefaultOptions.Equipamento
+        name='equipamento_id'
+      }}
+    </div>
+  </div>
+</template>

@@ -6,6 +6,10 @@ let ssHorarios = {
     optional: false,
     label: 'Código',
   },
+  nome: {
+    type: String,
+    optional: true,
+  },
   diaSemana: {
     type: [String],
     optional: false,

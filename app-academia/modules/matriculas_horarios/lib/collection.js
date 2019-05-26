@@ -1,0 +1,1 @@
+MatriculaHorarios = new Mongo.Collection('matriculas_horarios');
