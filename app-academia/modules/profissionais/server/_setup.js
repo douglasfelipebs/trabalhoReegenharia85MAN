@@ -12,7 +12,7 @@ if (!Menus.findOne({_id: "profissionais"})) {
   Menus.insert({
     _id: "profissionais",
     title: "Profissionais",
-    icon_class: "fa-briefcase",
+    icon_class: "fa-graduation-cap",
     order: 1,
     parent: "cadastros",
     app_id: "profissionais",

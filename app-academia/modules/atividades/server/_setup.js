@@ -12,7 +12,7 @@ if (!Menus.findOne({_id: "atividades"})) {
   Menus.insert({
     _id: "atividades",
     title: "Atividades",
-    icon_class: "fa-briefcase",
+    icon_class: "fa-bicycle",
     order: 1,
     parent: "cadastros",
     app_id: "atividades",

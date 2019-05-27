@@ -12,7 +12,7 @@ if (!Menus.findOne({_id: "horarios"})) {
   Menus.insert({
     _id: "horarios",
     title: "Horarios",
-    icon_class: "fa-briefcase",
+    icon_class: "fa-clock-o",
     order: 1,
     parent: "cadastros",
     app_id: "horarios",

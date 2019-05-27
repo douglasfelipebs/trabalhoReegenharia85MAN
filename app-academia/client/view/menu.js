@@ -8,6 +8,10 @@ Template.menu.helpers({
   router_link: function () {
     let app = Apps.findOne({_id: this.app_id});
     return app && app.router_link ? app.router_link : "";
+  },
+  icon: function () {
+    const menu = Menus.findOne({_id: this._id});
+    return menu && menu.icon_class ? menu.icon_class : "";
   }
 });
 

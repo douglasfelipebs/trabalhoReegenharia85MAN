@@ -1,0 +1,1 @@
+Produtos = new Mongo.Collection('produtos');

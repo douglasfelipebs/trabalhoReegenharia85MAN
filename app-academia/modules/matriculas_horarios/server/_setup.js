@@ -12,9 +12,9 @@ if (!Menus.findOne({_id: "matriculas_horarios"})) {
   Menus.insert({
     _id: "matriculas_horarios",
     title: "Matriculas/Horarios",
-    icon_class: "fa-briefcase",
+    icon_class: "fa-clock-o",
     order: 1,
-    parent: "opcAlunos",
+    parent: "menu_alunos",
     app_id: "matriculas_horarios",
   });
 }
