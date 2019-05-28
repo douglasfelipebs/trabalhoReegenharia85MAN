@@ -33,6 +33,10 @@ Template.registerHelper('logicalNOT', function(a) {
 	return !a;
 });
 
+Template.registerHelper('multiply', function (a, b) {
+	return a * b;
+})
+
 Template.registerHelper('concat', function(a = '', b = '') {
 	return String(a) + String(b);
 });

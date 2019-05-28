@@ -1,0 +1,1 @@
+Vendas = new Mongo.Collection('vendas');

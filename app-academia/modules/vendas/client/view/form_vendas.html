@@ -1,0 +1,68 @@
+<template name="form_vendas">
+  {{#autoForm id="formCadastroVendas"
+              schema="SchemaVendas.ssItemProduto"
+  }}
+    <div class="row">
+      <div class="col-sm-3">
+        {{> afQuickField name='tipo_comprador'}}
+      </div>
+      {{#if equals tipo_comprador 'aluno' }}
+        <div class="col-sm-9">
+          {{> searchField options=SearchFieldDefaultOptions.Aluno
+            name='aluno_id'
+          }}
+        </div>
+      {{else}}
+        <div class="col-sm-9">
+          {{> afQuickField name='visitante_nome'}}
+        </div>
+      {{/if}}
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        {{> afQuickField name='tipo_venda'}}
+      </div>
+      {{#if equals tipo_venda 'bar'}}
+        <div class="col-sm-6">
+          {{> searchField options=SearchFieldDefaultOptions.ProdutoBar
+            name='produto_id'
+          }}
+        </div>
+      {{else}}
+        <div class="col-sm-6">
+          {{> searchField options=SearchFieldDefaultOptions.ProdutoLoja
+            name='produto_id'
+          }}
+        </div>
+      {{/if}}
+      <div class="col-sm-3">
+        {{> afQuickField name='quantidade'}}
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary">Adicionar</button>
+    </div>
+  {{/autoForm}}
+  <div class="row">
+    <div class="col-sm-12">
+      {{#if itens}}
+        <table class="table tabela-bordered table-striped table-condensed">
+          <tr>
+            <th>Descrição</th>
+            <th>Valor Unitário</th>
+            <th>Quantidade</th>
+            <th>Total</th>
+          </tr>
+          {{#each item in itens}}
+            <tr>
+              <td>{{item.descricao}}</td>
+              <td>R$ {{item.valor_unitario}}</td>
+              <td>{{item.quantidade}}</td>
+              <td>R$ {{multiply item.quantidade item.valor_unitario}}</td>
+            </tr>
+          {{/each}}
+        </table>
+      {{/if}}
+    </div>
+  </div>
+</template>
