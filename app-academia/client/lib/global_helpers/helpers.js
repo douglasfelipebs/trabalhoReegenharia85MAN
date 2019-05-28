@@ -61,3 +61,7 @@ Template.registerHelper('toUpperCase', function(s) {
 Template.registerHelper('toCapitalize', function(s) {
 	return (s || '').replace(/^\w/, c => c.toUpperCase());
 });
+
+Template.registerHelper('toFixed', function (a, n) {
+	return a.toFixed(n);
+});

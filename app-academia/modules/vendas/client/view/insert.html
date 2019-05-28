@@ -6,14 +6,92 @@
       </h3>
     </div>
     <div class="panel-body" style="display: block;">
+      {{#autoForm id="formCadastroItemProduto"
+                  schema="SchemaVendas.ssItemProduto"
+                  itens_venda=itens_venda_reactive
+      }}
+        <div class="row">
+          <div class="col-sm-3">
+            {{> afQuickField name='tipo_venda'}}
+          </div>
+          {{#if equals tipo_venda 'bar'}}
+            <div class="col-sm-6">
+              {{> searchField options=SearchFieldDefaultOptions.ProdutoBar
+                name='produto_id'
+              }}
+            </div>
+          {{else}}
+            <div class="col-sm-6">
+              {{> searchField options=SearchFieldDefaultOptions.ProdutoLoja
+                name='produto_id'
+              }}
+            </div>
+          {{/if}}
+          <div class="col-sm-3">
+            {{> afQuickField name='quantidade'}}
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Adicionar</button>
+        </div>
+      {{/autoForm}}
       {{#autoForm id="formCadastroVendas"
                   schema="SchemaVendas.ssForm"
+                  itens=itens
       }}
+        <div class="row">
+          <div class="col-sm-3">
+            {{> afQuickField name='tipo_comprador'}}
+          </div>
+          {{#if equals tipo_comprador 'aluno' }}
+            <div class="col-sm-9">
+              {{> searchField options=SearchFieldDefaultOptions.Aluno
+                name='aluno_id'
+              }}
+            </div>
+          {{else}}
+            <div class="col-sm-9">
+              {{> afQuickField name='visitante_nome'}}
+            </div>
+          {{/if}}
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            {{#if itens}}
+              <table class="table tabela-bordered table-striped table-condensed">
+                <tr>
+                  <th>Produto</th>
+                  <th>Valor Unitário</th>
+                  <th>Quantidade</th>
+                  <th>Total</th>
+                  <th></th>
+                </tr>
+                {{#each item in itens}}
+                  <tr>
+                    <td>{{item.nome}}</td>
+                    <td>R$ {{item.valor_unitario}}</td>
+                    <td>{{item.quantidade}}</td>
+                    <td>R$ {{toFixed item.valor_total 2 }}</td>
+                    <td id="{{item._id}}">
+                      <button type="button" style="border: 0" class="btn btn-danger btn-trans" id="remove_item_button">
+                        <i class="fa fa-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+                {{/each}}
+              </table>
+            {{/if}}
+          </div>
+        </div>
 
-        {{> form_vendas }}
+        <div class="row">
+          <div class="col-sm-offset-9 col-sm-3">
+            {{> afQuickField name='total_compra_aux' disabled=true value=total_compra}}
+          </div>
+        </div>
 
         <div class="form-group">
-          <button type="submit" class="btn btn-primary">Salvar</button>
+          <button type="submit" class="btn btn-primary">Gravar Compra</button>
         </div>
       {{/autoForm}}
     </div>

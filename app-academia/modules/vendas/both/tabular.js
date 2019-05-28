@@ -9,42 +9,31 @@ TabularTables.Vendas = new Tabular.Table({
   order: [0, 'asc'],
   columns: [
     {
-      data: "codigo",
-      title: "Código",
+      data: "tipo_comprador",
+      title: "Venda para:",
+      width: '15%',
+      render: function (val) {
+        if (val) return val.toUpperCase();
+        return '';
+      }
     },
     {
-      data: "nome",
+      data: "comprador_nome",
       title: "Nome",
+      width: '70%',
       render: function (val) {
         if (val) return val.toUpperCase();
         return '';
-      }
+      },
     },
     {
-      data: "tipo",
-      title: "Tipo",
-      render: function (val) {
-        if (val) return val.toUpperCase();
-        return '';
-      }
-    },
-    {
-      data: "preco",
-      title: "Preço",
+      data: "total_compra",
+      title: "Total da Compra",
+      width: '15%',
       render: function (val) {
         if (val) return `R$ ${val}`;
         return 'Erro ao encontrar o preço';
       }
     },
-    {
-      title: 'Editar',
-      width: '10px',
-      tmpl: Meteor.isClient && Template.edit_button
-    },
-    {
-      title: 'Remover',
-      width: '10px',
-      tmpl: Meteor.isClient && Template.remove_button
-    }
   ]
 });
