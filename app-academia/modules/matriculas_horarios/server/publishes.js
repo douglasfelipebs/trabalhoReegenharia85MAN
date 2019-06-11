@@ -19,5 +19,5 @@ Meteor.publishComposite('tabular_matriculas_horarios', function (tableName, ids,
 });
 
 Meteor.publish("count_matriculas", function () {
-  return MatriculaHorarios.find({}, {fields: {_id: 1}});
-})
+  return MatriculaHorarios.find({}, {fields: {_id: 1, aluno_id: 1}});
+});

@@ -1,5 +1,5 @@
 <template name="home">
-  <div>
+  <div class="dashboard">
     <br>
     <table class="dashboard-table">
       <tbody>
@@ -26,6 +26,30 @@
                 Alunos Matriculados
               </h4>
               <label class="card-helper-indicator">{{alunos_matriculados}}</label>
+            </div>
+          </td>
+          <td>
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+              <br>
+              <h4>
+                Profissionais Cadastrados
+              </h4>
+              <label class="card-helper-indicator">{{profissionais_cadastrados}}</label>
+            </div>
+          </td>
+          <td>
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <i class="fa fa-usd"></i>
+              </div>
+              <br>
+              <h4>
+                Total de Vendas
+              </h4>
+              <label class="card-helper-indicator">R$ {{total_vendas}}</label>
             </div>
           </td>
         </tr>

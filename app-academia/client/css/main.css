@@ -38,7 +38,7 @@ body {
 .dashboard-card {
   border: 1px solid #5897fb;
   border-radius: 5px;
-  width: 200px;
+  width: 250px;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -50,7 +50,7 @@ body {
 
 .dashboard-card .card-icon {
   position: absolute;
-  top: 80px;
+  top: 70px;
   background-color: white;
   border: 1px solid #5897fb;
   border-radius: 50%;
@@ -68,4 +68,10 @@ body {
 .dashboard-card .card-helper-indicator {
   font-family: sans-serif;
   font-size: 30px;
+}
+
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
