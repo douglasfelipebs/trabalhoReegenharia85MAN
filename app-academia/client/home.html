@@ -1,0 +1,35 @@
+<template name="home">
+  <div>
+    <br>
+    <table class="dashboard-table">
+      <tbody>
+        <tr>
+          <td>
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <i class="fa fa-user"></i>
+              </div>
+              <br>
+              <h4>
+                Alunos Cadastrados
+              </h4>
+              <label class="card-helper-indicator">{{alunos_cadastrados}}</label>
+            </div>
+          </td>
+          <td>
+            <div class="dashboard-card">
+              <div class="card-icon">
+                <i class="fa fa-clock-o"></i>
+              </div>
+              <br>
+              <h4>
+                Alunos Matriculados
+              </h4>
+              <label class="card-helper-indicator">{{alunos_matriculados}}</label>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</template>

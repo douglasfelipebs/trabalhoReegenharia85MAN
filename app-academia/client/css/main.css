@@ -30,3 +30,42 @@ body {
   padding: 2px;
   text-align: center;
 }
+.dashboard-table tbody tr td {
+  padding: 10px;
+  /*border: 1px solid salmon;*/
+}
+
+.dashboard-card {
+  border: 1px solid #5897fb;
+  border-radius: 5px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  background-color: #5897fb;
+}
+
+.dashboard-card .card-icon {
+  position: absolute;
+  top: 80px;
+  background-color: white;
+  border: 1px solid #5897fb;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-card .card-icon i {
+  color: #5897fb;
+}
+
+.dashboard-card .card-helper-indicator {
+  font-family: sans-serif;
+  font-size: 30px;
+}

@@ -13,6 +13,13 @@ TabularTables.MatriculaHorarios = new Tabular.Table({
       title: "Código",
     },
     {
+      data: "aluno_nome",
+      title: "Aluno",
+      render: function (val, type, doc) {
+        return val.toUpperCase();
+      }
+    },
+    {
       data: "atividade_nome",
       title: "Atividade",
       render: function (val, type, doc) {
